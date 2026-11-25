@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.DS_Store
+.venv/
+venv/
+# File gốc CMS quá lớn, không đưa lên GitHub
+data/raw/
+data/HCAHPS_Hospital_cleaned.csv
+data/Unplanned_Hospital_Visits_cleaned.csv
