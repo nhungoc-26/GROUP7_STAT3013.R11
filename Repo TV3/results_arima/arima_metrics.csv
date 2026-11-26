@@ -1,0 +1,4 @@
+Model,RMSE,MAE
+"ARIMA(0,1,2)",0.4999,0.4052
+Naive (last value),0.5468,0.4555
+Drift,0.384,0.3011
