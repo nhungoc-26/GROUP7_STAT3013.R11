@@ -155,7 +155,3 @@ Hospital-level patient-experience scores have **only a weak association** with H
 - Scripts create their output folders automatically.
 - The classification threshold (21.3%) is the median of the **training** set only, so the test set does not influence the label definition.
 - Random seed is fixed to `42` everywhere for reproducibility.
-
-## Data source
-
-Centers for Medicare & Medicaid Services (CMS), *HCAHPS – Hospital* and *Unplanned Hospital Visits – Hospital*, Provider Data Catalog: <https://data.cms.gov/provider-data/>
