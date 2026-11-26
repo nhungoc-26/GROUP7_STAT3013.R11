@@ -1,0 +1,7 @@
+Assumption,Test,Statistic,p-value,Note
+Normality of residuals,Shapiro-Wilk,0.989905704374438,1.4713203458722655e-11,p < 0.05 => residuals deviate from normal
+Normality of residuals,Jarque-Bera,180.1877953732767,7.459631626147619e-40,p < 0.05 => residuals deviate from normal
+Homoscedasticity,Breusch-Pagan,39.48083244709132,1.5820930839857853e-06,p < 0.05 => heteroscedasticity
+Linearity,Rainbow,0.8777563478003616,0.98596372727031,p < 0.05 => possible non-linearity
+Independence of errors,Durbin-Watson,1.8039276543697238,,~2 means no autocorrelation
+Influential points,Cook's D > 4/n,102.0,,count out of 2280 observations
