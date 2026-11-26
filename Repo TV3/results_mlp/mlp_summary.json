@@ -1,0 +1,39 @@
+{
+  "best_params": {
+    "mlp__activation": "tanh",
+    "mlp__alpha": "0.1",
+    "mlp__hidden_layer_sizes": "(64, 32, 16)",
+    "mlp__learning_rate_init": "0.005"
+  },
+  "cv_auc": 0.6080095875214775,
+  "baseline": {
+    "Model": "MLP baseline",
+    "Accuracy": 0.5491228070175439,
+    "Precision": 0.5161290322580645,
+    "Recall": 0.24521072796934865,
+    "F1": 0.33246753246753247,
+    "ROC-AUC": 0.5715259953626207
+  },
+  "tuned": {
+    "Model": "MLP tuned",
+    "Accuracy": 0.5754385964912281,
+    "Precision": 0.5414847161572053,
+    "Recall": 0.47509578544061304,
+    "F1": 0.5061224489795918,
+    "ROC-AUC": 0.6126052399905765
+  },
+  "confusion_TN_FP_FN_TP": [
+    204,
+    105,
+    137,
+    124
+  ],
+  "seeds_auc_mean": 0.6110391945343401,
+  "seeds_auc_std": 0.010497469577861617,
+  "seeds_f1_mean": 0.5180632379154573,
+  "seeds_f1_std": 0.014184459980941937,
+  "epochs": 30,
+  "n_params": 3201,
+  "n_train": 2280,
+  "n_test": 570
+}
