@@ -24,6 +24,7 @@ GROUP7_STAT3013.R11/
     ├── shap_beeswarm_rf_test570_v1.png
     ├── shap_beeswarm_rf_test570_v2.png
     └── shap_local_test470.png
+```
 ## Data & Conventions
 - **Dataset:** `2,850` hospitals (`STAT3013_final_model_data.csv` / `data/processed.csv`, no missing values), with a shared held-out test set of `570` rows (`Split == "test"`, `random_state = 42`).
 - **Label vs. Threshold:** `21.3` (training-set median of `READM_30_HF`) is used strictly to define `READM_HF_High = 1` when `READM_30_HF > 21.3` (else `0`); classification models are evaluated at probability threshold **`0.5`** (never use `0.213` as a probability threshold).
