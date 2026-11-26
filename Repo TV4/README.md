@@ -1,22 +1,23 @@
-# Repo TV4 – SEM (`semopy`) & SHAP Explainability
+# Repo TV4 – SEM (`semopy`), SHAP Explainability & Model Comparison
 
-Member 4 (TV4) deliverables for **GROUP7_STAT3013.R11** on 30-day heart failure readmissions (`READM_30_HF`).
+Deliverables of **Member 4 (TV4)** for **GROUP7_STAT3013.R11** on hospital-level HCAHPS patient experience and 30-day heart failure readmission (`READM_30_HF`).
 
-## Scope & Conventions
-- **Dataset:** `2,850` hospitals (`STAT3013_final_model_data.csv` / `data/processed.csv`, no missing values) and `8` HCAHPS linear score predictors.
-- **Label vs. Threshold:** `21.3` (training-set median of `READM_30_HF`) is used strictly to define `READM_HF_High = 1` (`READM_30_HF > 21.3`); classification models are evaluated at probability threshold **`0.5`**.
-- **SEM (`semopy`):** Re-estimated directly on all `2,850` hospitals (replacing prior `n = 1,000` figures that lacked reproducible code) with structural path diagram and code.
-- **SHAP Explainability:** Recomputed on `570` real test rows (`Split == "test"`, `random_state = 42`) at threshold `0.5` (including local explanation for `#Test 470`).
+| Task | Target / Scope | Method | Artifacts |
+| :--- | :--- | :--- | :--- |
+| **SEM & Diagnostics** | `READM_30_HF` (`n = 2,850` hospitals) | VIF check, standardized regression (`R² = 0.062`), and `semopy` structural modeling | `tv4_part1_sem_analysis.py`, SEM CSVs, path diagram |
+| **SHAP & Benchmark** | `READM_HF_High` (`570` test rows, threshold `0.5`) | `rf.pkl` Gini & `SHAP` (`#Test 470` local case) + comparison across tuned models | SHAP plots/CSVs, report sections |
 
-## Repository Structure
-- `README.md` — Overview of TV4 deliverables, scope, and files
-- `phan 1 va phan 2.docx` — Draft/compiled TV4 report content and tables
-- `outputs_tv4_part1_sem_*` — SEM correlation, descriptive, statistics, and TV4 part 1 output files
-- `sem_*` / `shap_*` *(when uploaded)* — Reproducible `semopy` & `SHAP` scripts and generated figures
+## Repository structure
 
-## Assigned Report Sections
-- **Section 2 (Literature Review — DL & XAI contribution with TV2)**
-- **Section 3 (Research Methodology — SEM & SHAP parts)**
-- **Section 4 (Implementation & Experiments — SEM & SHAP runs on `2,850` / `570` rows)**
-- **Section 5 (5.4 SEM Results, 5.7 SHAP Interpretability, 5.8 Model Comparison with TV5)**
-- **Section 7 (References — IEEE format with TV2)**
+```text
+Repo TV4/
+├── README.md
+├── tv4_part1_sem_analysis.py
+├── sem_correlation_matrix.csv
+├── sem_descriptive_stats.csv
+├── sem_standardized_paths_8features.csv
+├── sem_path_diagram_2850.png
+├── shap_bar_test570.png
+├── shap_beeswarm_test570.png
+├── shap_waterfall_test470.png
+└── shap_local_test470.csv
