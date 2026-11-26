@@ -1,0 +1,9 @@
+# Tested with: Python 3.12, scikit-learn 1.9.1, pandas 3.0.5, numpy 2.5.3, scipy 1.18.1,
+# matplotlib 3.11.2, seaborn 0.13.2, joblib 1.6.0. Also runs on Google Colab's default versions.
+scikit-learn>=1.4
+pandas>=2.0
+numpy>=1.26
+scipy>=1.11
+matplotlib>=3.8
+seaborn>=0.13
+joblib>=1.3

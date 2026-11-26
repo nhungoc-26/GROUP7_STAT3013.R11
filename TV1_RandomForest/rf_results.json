@@ -1,0 +1,59 @@
+{
+  "model": "RandomForestClassifier",
+  "params": {
+    "bootstrap": true,
+    "ccp_alpha": 0.0,
+    "class_weight": null,
+    "criterion": "gini",
+    "max_depth": 4,
+    "max_features": 1.0,
+    "max_leaf_nodes": null,
+    "max_samples": null,
+    "min_impurity_decrease": 0.0,
+    "min_samples_leaf": 30,
+    "min_samples_split": 2,
+    "min_weight_fraction_leaf": 0.0,
+    "monotonic_cst": null,
+    "n_estimators": 500,
+    "n_jobs": -1,
+    "oob_score": false,
+    "random_state": 42,
+    "verbose": 0,
+    "warm_start": false
+  },
+  "features": [
+    "Nurse_Communication",
+    "Doctor_Communication",
+    "Medication_Communication",
+    "Discharge_Information",
+    "Cleanliness",
+    "Quietness",
+    "Overall_Hospital_Rating",
+    "Recommend_Hospital"
+  ],
+  "target": "READM_HF_High",
+  "threshold_READM_30_HF": 21.3,
+  "cv_protocol": "RepeatedStratifiedKFold 5x10 on train, ROC-AUC",
+  "cv_auc_mean": 0.6061887595210499,
+  "cv_auc_std": 0.022066562155575387,
+  "baseline_cv_auc_mean": 0.5676677164793561,
+  "baseline_cv_auc_std": 0.019934996091360103,
+  "train_auc": 0.6636944161427973,
+  "test_baseline": {
+    "Model": "Random Forest baseline (default)",
+    "Accuracy": 0.5403508771929825,
+    "Precision": 0.4979757085020243,
+    "Recall": 0.47126436781609193,
+    "F1": 0.484251968503937,
+    "ROC-AUC": 0.5663430420711973
+  },
+  "test": {
+    "Model": "Random Forest tuned",
+    "Accuracy": 0.6,
+    "Precision": 0.5829145728643216,
+    "Recall": 0.4444444444444444,
+    "F1": 0.5043478260869565,
+    "ROC-AUC": 0.6046944165457725
+  },
+  "sklearn_version": "1.9.1"
+}

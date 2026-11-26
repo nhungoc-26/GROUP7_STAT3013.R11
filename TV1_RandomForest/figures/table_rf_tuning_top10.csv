@@ -1,0 +1,11 @@
+params_str,mean_test_score,std_test_score
+"{'max_depth': 4, 'max_features': 1.0, 'min_samples_leaf': 30}",0.6059485395989359,0.022813143362605603
+"{'max_depth': 4, 'max_features': 1.0, 'min_samples_leaf': 10}",0.6029233475958549,0.02404377839780345
+"{'max_depth': 4, 'max_features': 1.0, 'min_samples_leaf': 60}",0.602525950102087,0.023216026453484653
+"{'max_depth': 4, 'max_features': 1.0, 'min_samples_leaf': 1}",0.6024727853555556,0.02197332169185744
+"{'max_depth': 8, 'max_features': 1.0, 'min_samples_leaf': 60}",0.6021531136091002,0.021660912789682542
+"{'max_depth': None, 'max_features': 1.0, 'min_samples_leaf': 60}",0.6020684016386978,0.021669053592154406
+"{'max_depth': 12, 'max_features': 1.0, 'min_samples_leaf': 60}",0.6020684016386978,0.021669053592154406
+"{'max_depth': 8, 'max_features': 1.0, 'min_samples_leaf': 30}",0.6013098769961516,0.019651931507541107
+"{'max_depth': 8, 'max_features': 0.5, 'min_samples_leaf': 30}",0.6011821811863531,0.020695948111581885
+"{'max_depth': 4, 'max_features': 0.5, 'min_samples_leaf': 30}",0.6005885597416679,0.023506451461880188
