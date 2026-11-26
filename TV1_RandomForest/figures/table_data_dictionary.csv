@@ -1,0 +1,15 @@
+Variable,Role,Definition,Source
+Facility ID,Identifier,"CMS Certification Number (6 characters), merge key",Both
+Facility_Name / State,Identifier,Hospital name and U.S. state,Both
+Nurse_Communication,Input,H_COMP_1_LINEAR_SCORE – nurses communicated well,HCAHPS
+Doctor_Communication,Input,H_COMP_2_LINEAR_SCORE – doctors communicated well,HCAHPS
+Medication_Communication,Input,H_COMP_5_LINEAR_SCORE – staff explained medicines,HCAHPS
+Discharge_Information,Input,H_COMP_6_LINEAR_SCORE – patients got discharge information,HCAHPS
+Cleanliness,Input,H_CLEAN_LINEAR_SCORE – room and bathroom were clean,HCAHPS
+Quietness,Input,H_QUIET_LINEAR_SCORE – area around the room was quiet at night,HCAHPS
+Overall_Hospital_Rating,Input,H_HSP_RATING_LINEAR_SCORE – overall rating of the hospital,HCAHPS
+Recommend_Hospital,Input,H_RECMND_LINEAR_SCORE – would recommend the hospital,HCAHPS
+READM_30_HF,Target (regression),"Heart failure 30-day readmission rate, %",Unplanned Hospital Visits
+READM_HF_High,Target (classification),"1 if READM_30_HF > 21.3 (training-set median), else 0",Derived
+Split,Design,"train (2,280) / test (570), random_state = 42",Derived
+Start_Date / End_Date,Period,Readmission measurement period (07/2023 – 06/2025),Unplanned Hospital Visits
