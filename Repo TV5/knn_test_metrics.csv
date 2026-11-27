@@ -1,4 +1,0 @@
-Model,Accuracy,Precision,Recall,F1,ROC-AUC
-"KNN (K=5, default)",0.5386,0.4959,0.4636,0.4792,0.5507
-"KNN (tuned, 1-SE)",0.5912,0.5707,0.433,0.4924,0.6004
-"KNN (max CV AUC, K=381)",0.6053,0.5957,0.4291,0.4989,0.6058
